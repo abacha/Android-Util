@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="dynamic_dialog">
+		<item name="android:layout_width">220dp</item>
+		<item name="android:layout_height">220dp</item>
+	</style>
+	<style name="dynamic_dialog_close">
+		<item name="android:layout_width">220dp</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+</resources>

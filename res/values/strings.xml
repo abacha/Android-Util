@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="remind_later">no, thanks</string>
+	<string name="rate_it_msg">if you like it, please rate it</string>
+	<string name="rate">rate now</string>
+</resources>

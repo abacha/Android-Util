@@ -1,0 +1,47 @@
+Main Activity:
+	private static AndroidUtil util;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		util = new AndroidUtil(this);
+	}
+
+	@Override
+	public void onStop() {
+		super.onStop();
+		util.onStop(this);
+	}
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		util.onStart(this);
+	}
+
+
+Principal Activity:
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		Preferences.initialize(this);
+	}
+
+	@Override
+	public void run() {
+		this.finish();
+		startActivity(new Intent(this, Preferences.getStartClass()));
+	}
+	
+
+Android Manifest:
+	<activity android:name="Principal"
+              android:label="@string/app_name"
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+              android:screenOrientation="landscape">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+

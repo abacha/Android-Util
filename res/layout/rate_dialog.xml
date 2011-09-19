@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@android:color/black"
+	android:gravity="center">
+	<TextView
+		android:layout_margin="10dp"
+		android:id="@+id/rate_text"
+		android:text="@string/rate_it_msg"
+		android:layout_gravity="center_horizontal"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:layout_width="wrap_content" />
+	<Button
+		android:text="@string/rate"
+		android:id="@+id/rate_button"
+		android:layout_height="wrap_content" android:layout_width="150dp"/>
+	<Button
+		android:text="@string/remind_later"
+		android:id="@+id/remind_later_button"
+		android:layout_height="wrap_content" android:layout_width="150dp"/>
+</LinearLayout>

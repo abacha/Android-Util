@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layout_main">
+    <ImageButton    	
+        android:id="@+id/close_ad"
+        android:visibility="gone"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-36dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/btn_close_ad" />	
+</RelativeLayout>
